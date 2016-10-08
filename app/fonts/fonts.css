@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato.eot');
+	src: url('Lato?#iefix') format('embedded-opentype'),
+		 url('Lato.woff') format('woff'),
+		 url('Lato.ttf') format('truetype'),
+		 url('Lato.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato.eot');
+	src: url('Lato.eot?#iefix') format('embedded-opentype'),
+		 url('Lato.woff') format('woff'),
+		 url('Lato.ttf') format('truetype'),
+		 url('Lato.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src:url('./font-awesome/fonts/fontawesome-webfont.ttf');
+}

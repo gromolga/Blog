@@ -1,0 +1,89 @@
+@media screen and (max-device-width: 320px) {
+  body {
+    max-width: 320px;
+    overflow-x: hidden; }
+  header {
+    max-width: 320px;
+    position: fixed;
+    max-height: 50px;
+    background-color: #fff; }
+  strong {
+    display: block;
+    width: 320px;
+    text-align: center; }
+  .logo span {
+    display: none; }
+  .logo:before {
+    position: absolute;
+    left: 20px;
+    content: "\f0c9";
+    font-size: 20px;
+    font-family: "FontAwesome"; }
+  .nav_header ul {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    transition: left 0.5s ease-out 0.1s;
+    left: -50%;
+    background-color: rgba(150, 200, 50, 0.5);
+    padding-left: 30px; }
+    .nav_header ul li {
+      display: block; }
+      .nav_header ul li a {
+        color: black; }
+  .nav_header .search_input {
+    top: -95px;
+    right: 0; }
+  .nav_header .search {
+    position: absolute;
+    top: -90px;
+    left: -30px;
+    font-size: 20px; }
+  .nav_header .mobile {
+    display: block;
+    cursor: pointer; }
+  .nav_header.active ul {
+    left: 0%;
+    background-color: rgba(150, 200, 50, 0.5); }
+    .nav_header.active ul li {
+      display: block; }
+      .nav_header.active ul li a {
+        color: black; }
+  .nav_header.active .mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(50, 50, 50, 0.5); }
+    .nav_header.active .mobile:after {
+      display: none; }
+  .search_input {
+    z-index: 50; }
+  .head_content {
+    width: 320px; }
+  .social_list_main, .head_main, .social_main {
+    text-align: center; }
+  .social_main {
+    width: 100%; }
+  .social_list_main {
+    display: block; }
+  .head_main h1 {
+    font-size: 14px;
+    line-height: 14px; }
+  .head_main h5 {
+    font-size: 12px;
+    line-height: 12px; }
+  .wrapper {
+    width: 320px; }
+  .breadcrumbs {
+    display: none; }
+  .gallery li {
+    display: block;
+    margin: 0 auto; }
+  footer {
+    width: 320px; }
+    footer li {
+      display: block; } }
