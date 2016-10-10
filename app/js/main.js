@@ -1,7 +1,5 @@
 
-$(document).ready(alert(1));
 $(document).ready(function(){
-	alert(1)
 	$('.search_icon').click(function(){
 		$(this).toggleClass('active');
 		if($(this).hasClass('active')){
