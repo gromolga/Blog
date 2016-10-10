@@ -1,13 +1,22 @@
+$text-color: #cbced1
+$font-stack: 'lato', sans-serif
+$main-color: #6cbb9c
 body
-	background-color: #fff
-	font: 13.5px/18px 'lato', sans-serif;
-	padding: 0
-	margin: 0
+	color: $text-color
+	font: normal 17px/22px $font-stack
 	overflow-x: hidden
+.clearfix:after
+	display: table
+	clear: both
+	content: ''
+.container
+	max-width: 1170px
+	margin: 0 auto
+.menu
+	display: none
 h1
 	font-size: 22px
 	line-height: 22px
-	color: #bdc2c6
 h2
 	font-size: 18px
 	line-height: 18px
@@ -17,7 +26,6 @@ h3
 	font-size: 16px
 	line-height: 80px
 	text-transform: uppercase
-	color: #bdc2c6
 h4
 	font-size: 16px
 	line-height: 16px
@@ -26,103 +34,96 @@ h4
 h5
 	font-size: 15px
 	line-height: 15px
-	color: #bdc2c6
 header
-	min-height: 80px
-	max-width: 1170px
-	margin: 0 auto
+	padding: 20px
+	line-height: 30px
 .logo
 	float: left
-	padding: 25px 0
-	line-height: 25px
-	span
-		display: inline-block
-		padding: 0 10px 8px
-		vertical-align: middle
-		font-size: 12px
-		color: #d0d2d5
 	strong
-		font-size: 33px
-		color: #3d4a5d
-		i
-			font-style: normal
-			color: #6cbb9c
-.clearfix:after
-	display: table
-	clear: both
-	content: ''
-.nav_header
+		margin-right: 20px
+		span
+			display: inline-block
+			text-indent: -9999px
+			overflow: hidden
+			a
+				font-size: 26px
+				line-height: 36px
+				color: $text-color
+				text-decoration: none
+	span
+		font-size: 12px
+		line-height: 12px
+		vertical-align: 3px
+.nav
 	float: right
-	padding: 33px 0
-	ul
-		display: inline-block	
-		padding: 0
-		margin: 0
+	>*
+		float: left
+.nav_bar
+	display: block
+	margin: 0 10px 0 0
+	padding: 0
 	li
-		display: inline-block
+		float: left
 		list-style-type: none
-		> a
-			padding: 10px 20px
-			font-size: 13px
+		a
+			display: block
+			padding: 0 15px
 			text-transform: uppercase
 			text-decoration: none
-			color: #bec2c6
+			color: $text-color	
+			font-size: 13px
+			font-weight: bold
 			&:hover
 				border-radius: 3px
-				background-color: #6cbb9c
-				color: #fff
-				transition: background-color 0.5s
-	.mobile
-		display: none	
-.search_header
+				transition: 1s background-color
+				background-color: $main-color
+				color: white
+.search_icon
 	position: relative
 	display: inline-block
-	width: 15px
-	.search
-		position: relative
-		z-index: 100
-	&.active .search_input
-		max-height: 350px
-	&.active 
-		.search:after
-			content: "\f00d"
-			color: red
-	.search:after
-		content: "\f002"
-		font-family: "FontAwesome"
-.search_input
-	position: absolute 
-	top: -5px
-	right: 0
-	transition: 0.5s max-height
-	max-height: 0
-	overflow: hidden
+	text-align: center
+	width: 25px
+	z-index: 5
+	padding: 0 10px
+	font-family: FontAwesome
+	&:hover
+		transition: 0.5s font-size
+		font-size: 1.3em
+.search_icon:after
+	content: '\f002'
+.search_icon.active:after
+	content: '\f00d'
+	color: $main-color+red
+.search_wrapper
+	position: relative
+	ul
+		display: none
+		position: absolute
+		top: 0
+		right: 0
+		max-height: 400px
+		margin: 0
+		padding: 0
+		border-radius: 2px solid gray
+		background-color: rgba (255, 255, 255, 0.8)
+		li
+			list-style-type: none
+			a
+				display: block
+				padding: 0 5px
+				color: $text-color
+				text-decoration: none
+				&:hover
+					background-color: $main-color
+					color: white
 	input
-		height: 25px
-		width: 300px
-		padding-left: 10px
-		border: 1px solid #bec2c6
-		border-radius: 3px
-		color: #aaa
-		
-.select_header
-	max-height: 200px
-	width: 310px
-	margin: 0
-	line-height: 20px
-	border: 1px solid #bec2c6 
-	border-radius: 3px
-	background-color: #FFF
-	overflow-y: auto
-	a
-		display: block
-		padding: 10px
-		font-size: 16px
-		text-decoration: none
-		color: #aaa
-		&:hover
-			color: #000
-			background-color: #6cbb9c
+		width: 240px
+		border: none
+		border-bottom: 2px solid gray
+		padding: 0 30px 0 10px
+		color: $text-color
+		&:focus
+			color: $text-color - #222
 .head_content
 	display: table
 	content: ""
