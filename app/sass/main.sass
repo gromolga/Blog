@@ -1,295 +1,132 @@
-$text-color: #cbced1
-$font-stack: 'lato', sans-serif
 $main-color: #6cbb9c
+$text-color: #cbced1
+//Common typography
 body
-	color: $text-color
-	font: normal 17px/22px $font-stack
-	overflow-x: hidden
-.clearfix:after
-	display: table
-	clear: both
-	content: ''
-.container
-	max-width: 1170px
-	margin: 0 auto
-.menu
-	display: none
+  font: 17px/17px Lato, sans-serif
+  color: $text-color
 h1
-	font-size: 22px
-	line-height: 22px
+  font-size: 22px
+  line-height: 22px
 h2
-	font-size: 18px
-	line-height: 18px
-	text-transform: uppercase
-	color: #c2c6ca
+  font-size: 18px
+  line-height: 18px
 h3
-	font-size: 16px
-	line-height: 80px
-	text-transform: uppercase
-h4
-	font-size: 16px
-	line-height: 16px
-	font-weight: bold
-	color: #ecf0f1
-h5
-	font-size: 15px
-	line-height: 15px
-header
-	padding: 20px
-	line-height: 30px
+  font-size: 16px
+  line-height: 16px
+.clearfix:after
+  content: ''
+  display: block
+  clear: both
+//general styles
+.container
+  width: 1170px
+  margin: 0 auto
+  padding: 20px 0
+//logo
 .logo
-	float: left
-	strong
-		margin-right: 20px
-		span
-			display: inline-block
-			text-indent: -9999px
-			overflow: hidden
-			a
-				font-size: 26px
-				line-height: 36px
-				color: $text-color
-				text-decoration: none
-	span
-		font-size: 12px
-		line-height: 12px
-		vertical-align: 3px
-.nav
-	float: right
-	>*
-		float: left
-.nav_bar
-	display: block
-	margin: 0 10px 0 0
-	padding: 0
-	li
-		float: left
-		list-style-type: none
-		a
-			display: block
-			padding: 0 15px
-			text-transform: uppercase
-			text-decoration: none
-			color: $text-color	
-			font-size: 13px
-			font-weight: bold
-			&:hover
-				border-radius: 3px
-				transition: 1s background-color
-				background-color: $main-color
-				color: white
-.search_icon
-	position: relative
-	display: inline-block
-	text-align: center
-	width: 25px
-	z-index: 5
-	padding: 0 10px
-	font-family: FontAwesome
-	&:hover
-		transition: 0.5s font-size
-		font-size: 1.3em
-.search_icon:after
-	content: '\f002'
-.search_icon.active:after
-	content: '\f00d'
-	color: $main-color+red
-.search_wrapper
-	position: relative
-	ul
-		display: none
-		position: absolute
-		top: 0
-		right: 0
-		max-height: 400px
-		margin: 0
-		padding: 0
-		border-radius: 2px solid gray
-		background-color: rgba (255, 255, 255, 0.8)
-		li
-			list-style-type: none
-			a
-				display: block
-				padding: 0 5px
-				color: $text-color
-				text-decoration: none
-				&:hover
-					background-color: $main-color
-					color: white
-	input
-		width: 240px
-		border: none
-		border-bottom: 2px solid gray
-		padding: 0 30px 0 10px
-		color: $text-color
-		&:focus
-			color: $text-color - #222
-.head_content
-	display: table
-	content: ""
-	clear: both 
-	width: 1170px
-	padding: 80px 0 50px
-	margin: 0 auto
-.head_main
-	float: left
-.social_main
-	float: right
-.main_content
-	margin: 0 -9999px
-	padding: 30px 9999px 70px
-	background-color: #3d4a5d
-.wrapper
-	width: 1170px
-	margin: 0 auto
-.social_list_main
-	padding: 0
-	margin: 0
-	li
-		display: inline-block
-		height: 42px
-		width: 42px
-		margin-right: 5px
-		border-radius: 3px
-		text-align: center
-		line-height: 42px
-		&:hover
-			cursor: pointer
-	.twitter
-		background-color: #60aaeb
-	.facebook
-		background-color: #475995
-	.google
-		background-color: #be4b3c
-	.vkontakte
-		background-color: #0574d5
-	.youtube
-		background-color: #d91d04
-	.fa
-		color: white
-		font-size: 20px
-.breadcrumbs
-	text-align: center
-	font-size: 13px
-	line-height: 32px
-	color: #ecf0f1 
-	li
-		display: inline-block
-		&:after
-			display: inline
-			padding: 0 10px
-			content: "/"
-		&:last-child:after
-			display: none
-	a
-		color: #ecf0f1
-		text-decoration: none 
-		&:hover
-			text-decoration: underline
-.gallery
-	padding: 0
-	margin: 0
-	li
-		display: inline-block
-		padding-top: 30px
-		margin-left: 25px
-		list-style-type: none
-		text-align: center
-		&:first-child
-			margin-left: 0
-		&:nth-child(5)
-			margin-left: 0
-		&:nth-child(9)
-			margin-left: 0
-	a
-		text-decoration: none
-		color: #bec2c6
-		&:hover
-			font-weight: bold
-			color: #ecf0f1
-	.figcaption
-		&:hover
-			text-decoration: underline
-	.slash
-		&:after
-			display: inline
-			padding: 0 10px
-			content: "/"
-	img
-		height: 180px
-		width: 270px
-footer
-	width: 1170px
-	margin: 0 auto
-	padding: 30px 0 0
-	ul
-		padding: 0
-		margin: 0
-		li
-			display: inline-block
-			max-width: 290px
-			margin-left: 30px
-			vertical-align: top
-			&:first-child
-				margin-left: 0
-		a
-			display: block
-address
-	font-style: normal
-.About_us, .Posts
-	color: #bdc2c6
-	font-size: 13px
-	a
-		color: #bdc2c6
-		text-decoration: none
-		&:hover
-			text-decoration: underline
-.social_footer
-	li
-		display: inline-block
-		width: 40px
-		height: 40px
-		margin: 20px 0
-		border-radius: 3px
-		font-size: 15px
-		text-align: center
-		line-height: 40px
-		background-color: #edf0f1
-		color: #bdc2c5
-		&:hover
-			background-color: #60aaeb
-			i
-				color: #fff
-.Posts
-	b
-		display: block
-.COMMENTS
-	a
-		display: block
-		padding: 15px
-		margin-bottom: 10px
-		font-size: 13px
-		color: #bdc2c6
-		background-color: #edf0f1
-		text-decoration: none
-		&:hover
-			text-decoration: underline
-.copyright
-	padding: 30px 0
-	border-top: 1px solid #edf0f1
-	font-size: 12px
-	color: #bdc2c6
-	p
-		float: left
-		max-width: 250px
-	ul
-		float: right
-		padding: 0
-		margin: 0
-	li
-		display: inline-block
-	a
-		color: #bdc2c6
-		text-transform: none
-		&:hover
-			text-transform: underline
+  float: left
+  a
+    display: inline-block
+    text-decoration: none
+    img
+      max-height: 33px
+  span
+    font-size: 12px
+    line-height: 12px
+    vertical-align: 5px
+  strong
+    display: inline-block
+    text-indent: -9999px
+//navigaton
+.nav-header
+  float: right
+  ul
+    max-width: 500px
+    margin: 0
+    padding: 0
+  li
+    display: inline-block
+    margin: 0 5px 5px 0
+    list-style-type: none
+    a
+      display: block
+      padding: 10px 15px
+      border-radius: 3px
+      text-decoration: none
+      font-size: 13px
+      line-height: 13px
+      color: $text-color
+      text-transform: uppercase
+      &:hover
+        background: $main-color
+        color: white
+        -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        -moz-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        -ms-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        -o-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+.search
+  position: relative
+  float: right
+  margin-left: 25px
+  input
+    position: absolute
+    top: 0
+    right: -10px
+    height: 34px
+    width: 350px
+    padding: 0 10px 0
+    z-index: 10
+.search.disabled
+    input
+      display: none
+    .slide-down
+      display: none
+.search-icon
+  &:after
+    content: '\f002'
+    font-size: 20px
+    line-height: 33px
+    font-family: "FontAwesome"
+    color: $text-color
+  &:hover
+    cursor: pointer
+.nav-header
+  .main-page
+    background: $main-color
+    color: white
+.slide-down
+  position: absolute
+  top: 33px
+  right: -10px
+  width: 328px
+  margin: 0
+  padding: 10px
+  font-size: 18px
+  line-height: 18px
+  border: 1px solid grey
+  border-radius: 0 0 3px 3px
+  li
+    list-style-type: none
+    &:last-child
+      a
+        padding-bottom: 0
+  a
+    display: block
+    padding-bottom: 10px
+    font-size: 16px
+    line-height: 16px
+    text-decoration: none
+    color: $text-color
+    &:hover
+      color: #696969
+      -webkit-transition: color 0.2s ease-in-out
+      -moz-transition: color 0.2s ease-in-out
+      -ms-transition: color 0.2s ease-in-out
+      -o-transition: color 0.2s ease-in-out
+      transition: color 0.2s ease-in-out
+.slide-down.disabled
+  display: none
+
+
+
