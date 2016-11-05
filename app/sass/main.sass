@@ -1,3 +1,132 @@
+$main-color: #6cbb9c
+$text-color: #cbced1
+//Common typography
 body
-  background-color: #fff
-  color: red
+  font: 17px/17px Lato, sans-serif
+  color: $text-color
+h1
+  font-size: 22px
+  line-height: 22px
+h2
+  font-size: 18px
+  line-height: 18px
+h3
+  font-size: 16px
+  line-height: 16px
+.clearfix:after
+  content: ''
+  display: block
+  clear: both
+//general styles
+.container
+  width: 1170px
+  margin: 0 auto
+  padding: 20px 0
+//logo
+.logo
+  float: left
+  a
+    display: inline-block
+    text-decoration: none
+    img
+      max-height: 33px
+  span
+    font-size: 12px
+    line-height: 12px
+    vertical-align: 5px
+  strong
+    display: inline-block
+    text-indent: -9999px
+//navigaton
+.nav-header
+  float: right
+  ul
+    max-width: 500px
+    margin: 0
+    padding: 0
+  li
+    display: inline-block
+    margin: 0 5px 5px 0
+    list-style-type: none
+    a
+      display: block
+      padding: 10px 15px
+      border-radius: 3px
+      text-decoration: none
+      font-size: 13px
+      line-height: 13px
+      color: $text-color
+      text-transform: uppercase
+      &:hover
+        background: $main-color
+        color: white
+        -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        -moz-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        -ms-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        -o-transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out
+.search
+  position: relative
+  float: right
+  margin-left: 25px
+  input
+    position: absolute
+    top: 0
+    right: -10px
+    height: 34px
+    width: 350px
+    padding: 0 10px 0
+    z-index: 10
+.search.disabled
+    input
+      display: none
+    .slide-down
+      display: none
+.search-icon
+  &:after
+    content: '\f002'
+    font-size: 20px
+    line-height: 33px
+    font-family: "FontAwesome"
+    color: $text-color
+  &:hover
+    cursor: pointer
+.nav-header
+  .main-page
+    background: $main-color
+    color: white
+.slide-down
+  position: absolute
+  top: 33px
+  right: -10px
+  width: 328px
+  margin: 0
+  padding: 10px
+  font-size: 18px
+  line-height: 18px
+  border: 1px solid grey
+  border-radius: 0 0 3px 3px
+  li
+    list-style-type: none
+    &:last-child
+      a
+        padding-bottom: 0
+  a
+    display: block
+    padding-bottom: 10px
+    font-size: 16px
+    line-height: 16px
+    text-decoration: none
+    color: $text-color
+    &:hover
+      color: #696969
+      -webkit-transition: color 0.2s ease-in-out
+      -moz-transition: color 0.2s ease-in-out
+      -ms-transition: color 0.2s ease-in-out
+      -o-transition: color 0.2s ease-in-out
+      transition: color 0.2s ease-in-out
+.slide-down.disabled
+  display: none
+
+
+

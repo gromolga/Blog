@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Regilar.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('FontAwesome/fonts/fontawesome-webfonts.ttf');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,88 @@
+@media screen and (max-width: 1280px) {
+  .container{
+    width: 950px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container{
+    width: 800px;
+  }
+  .logo span{
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .container{
+    width: 600px;
+  }
+  .logo span{
+    display: none;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container{
+    width: 350px;
+    position: relative;
+  }
+  .search input,
+  .slide-down {
+    box-sizing: border-box;
+    width: 400px;
+  }
+  .nav-header ul {
+    display: none;
+  }
+  .logo{
+    float: none;
+    text-align: center;
+  }
+  .burger-menu:before {
+    position: absolute;
+    display: block;
+    left: -20px;
+    top: 25px;
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    z-index:5;
+  }
+  .nav-header.mobile-main-menu ul {
+    background-color: black;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    z-index:15;
+  }
+  .mobile-main-menu li {
+    display: block;
+    margin-top: 5px;
+  }
+  .mobile-main-menu li:first-child {
+    margin-top: 30px;
+  }
+  .mobile-main-menu .burger-menu:after {
+    position: fixed;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 280px;
+  }
+.search input,
+.slide-down{
+  width: 310px;
+}
+}
