@@ -19,7 +19,7 @@ h3 {
   display: block;
   clear: both; }
 
-.container {
+header .container {
   width: 1170px;
   margin: 0 auto;
   padding: 20px 0; }
@@ -132,3 +132,68 @@ h3 {
 
 .slide-down.disabled {
   display: none; }
+
+main .container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 60px 0 50px; }
+
+.main-header {
+  float: left; }
+
+.main-social {
+  float: right; }
+  .main-social h2 {
+    text-transform: uppercase; }
+  .main-social ul {
+    padding: 0;
+    margin: 0; }
+  .main-social li {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    font-size: 20px;
+    list-style-type: none; }
+    .main-social li:last-child {
+      margin-right: 0; }
+  .main-social .twitter:after, .main-social .facebook:after, .main-social .dribbble:after, .main-social .google:after, .main-social .envira:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    font-family: "FontAwesome";
+    color: white; }
+  .main-social .twitter:after {
+    content: '\f099';
+    background: #60aaeb; }
+  .main-social .facebook:after {
+    content: '\f09a';
+    background: #475995; }
+  .main-social .dribbble:after {
+    content: '\f17d';
+    background: #cc4d86; }
+  .main-social .google:after {
+    content: '\f1a0';
+    background: #be4b3c; }
+  .main-social .envira:after {
+    content: '\f299';
+    background: #688634; }
+  .main-social .twitter:hover:after, .main-social .facebook:hover:after, .main-social .dribbble:hover:after, .main-social .google:hover:after, .main-social .envira:hover:after {
+    background-color: #fff;
+    cursor: pointer; }
+  .main-social .twitter:hover:after {
+    color: #60aaeb; }
+  .main-social .facebook:hover:after {
+    color: #475995; }
+  .main-social .dribbble:hover:after {
+    color: #cc4d86; }
+  .main-social .google:hover:after {
+    color: #be4b3c; }
+  .main-social .envira:hover:after {
+    color: #688634; }

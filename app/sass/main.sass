@@ -17,12 +17,12 @@ h3
   content: ''
   display: block
   clear: both
-//general styles
-.container
-  width: 1170px
-  margin: 0 auto
-  padding: 20px 0
-//logo
+//Header
+header
+  .container
+    width: 1170px
+    margin: 0 auto
+    padding: 20px 0
 .logo
   float: left
   a
@@ -127,6 +127,80 @@ h3
       transition: color 0.2s ease-in-out
 .slide-down.disabled
   display: none
+//main
+main
+  .container
+    width: 1170px
+    margin: 0 auto
+    padding: 60px 0 50px
+.main-header
+  float: left
+.main-social
+  float: right
+  h2
+    text-transform: uppercase
+  ul
+    padding: 0
+    margin: 0
+  li
+    display: inline-block
+    position: relative
+    height: 40px
+    width: 40px
+    margin-right: 8px
+    font-size: 20px
+    list-style-type: none
+    &:last-child
+      margin-right: 0
+  .twitter:after, .facebook:after, .dribbble:after, .google:after, .envira:after
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    text-align: center
+    line-height: 40px
+    border-radius: 3px
+    font-family: "FontAwesome"
+    color: white
+  .twitter:after
+    content: '\f099'
+    background: #60aaeb
+  .facebook:after
+    content: '\f09a'
+    background: #475995
+  .dribbble:after
+    content: '\f17d'
+    background: #cc4d86
+  .google:after
+    content: '\f1a0'
+    background: #be4b3c
+  .envira:after
+    content: '\f299'
+    background: #688634
+  .twitter:hover, .facebook:hover, .dribbble:hover, .google:hover, .envira:hover
+    &:after
+      background-color: #fff
+      cursor: pointer
+  .twitter:hover
+    &:after
+      color: #60aaeb
+  .facebook:hover
+    &:after
+      color: #475995
+  .dribbble:hover
+    &:after
+      color: #cc4d86
+  .google:hover
+    &:after
+      color: #be4b3c
+  .envira:hover
+    &:after
+      color: #688634
+      
+
+
+
 
 
 
