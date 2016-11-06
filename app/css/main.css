@@ -14,6 +14,10 @@ h3 {
   font-size: 16px;
   line-height: 16px; }
 
+h4 {
+  font-size: 15px;
+  line-height: 15px; }
+
 .clearfix:after {
   content: '';
   display: block;
@@ -21,7 +25,9 @@ h3 {
 
 .container {
   width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto; }
+
+header .container {
   padding: 20px 0; }
 
 .logo {
@@ -132,3 +138,133 @@ h3 {
 
 .slide-down.disabled {
   display: none; }
+
+main .container {
+  padding: 60px 0 50px; }
+
+.main-header {
+  float: left; }
+
+.main-social {
+  float: right; }
+  .main-social h2 {
+    text-transform: uppercase; }
+  .main-social ul {
+    margin: 0;
+    padding: 0; }
+  .main-social li {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    font-size: 20px;
+    list-style-type: none; }
+    .main-social li:last-child {
+      margin-right: 0; }
+  .main-social .twitter:after, .main-social .facebook:after, .main-social .dribbble:after, .main-social .google:after, .main-social .envira:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    font-family: "FontAwesome";
+    color: white; }
+  .main-social .twitter:after {
+    content: '\f099';
+    background: #60aaeb; }
+  .main-social .facebook:after {
+    content: '\f09a';
+    background: #475995; }
+  .main-social .dribbble:after {
+    content: '\f17d';
+    background: #cc4d86; }
+  .main-social .google:after {
+    content: '\f1a0';
+    background: #be4b3c; }
+  .main-social .envira:after {
+    content: '\f299';
+    background: #688634; }
+  .main-social .twitter:hover:after, .main-social .facebook:hover:after, .main-social .dribbble:hover:after, .main-social .google:hover:after, .main-social .envira:hover:after {
+    background-color: #fff;
+    cursor: pointer; }
+  .main-social .twitter:hover:after {
+    color: #60aaeb; }
+  .main-social .facebook:hover:after {
+    color: #475995; }
+  .main-social .dribbble:hover:after {
+    color: #cc4d86; }
+  .main-social .google:hover:after {
+    color: #be4b3c; }
+  .main-social .envira:hover:after {
+    color: #688634; }
+
+.main-content {
+  background-color: #3d4a5d; }
+  .main-content .container {
+    padding: 0 0 40px; }
+
+.bread-crumbs ul {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center; }
+
+.bread-crumbs li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 13px; }
+  .bread-crumbs li:after {
+    content: '/';
+    cursor: default; }
+  .bread-crumbs li:last-child:after {
+    content: ''; }
+
+.bread-crumbs a {
+  padding: 0 10px;
+  line-height: 30px;
+  color: white;
+  text-decoration: none; }
+  .bread-crumbs a:hover {
+    text-decoration: underline; }
+
+.content {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .content > li {
+    display: inline-block;
+    width: 270px;
+    margin: 0 22px 25px 0;
+    vertical-align: top;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none; }
+    .content > li:nth-child(4n) {
+      margin-right: 0; }
+  .content a {
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: white; }
+    .content a:hover {
+      text-decoration: underline; }
+  .content .tags {
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    font-size: 12px; }
+    .content .tags li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0; }
+    .content .tags li:after {
+      content: ' / ';
+      cursor: default; }
+    .content .tags li:last-child:after {
+      content: ''; }
+    .content .tags a {
+      display: inline;
+      color: #cbced1; }
