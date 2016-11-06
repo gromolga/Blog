@@ -13,15 +13,20 @@ h2
 h3
   font-size: 16px
   line-height: 16px
+h4
+  font-size: 15px
+  line-height: 15px
 .clearfix:after
   content: ''
   display: block
   clear: both
+//Common styles
+.container
+  width: 1170px
+  margin: 0 auto
 //Header
 header
   .container
-    width: 1170px
-    margin: 0 auto
     padding: 20px 0
 .logo
   float: left
@@ -130,8 +135,6 @@ header
 //main
 main
   .container
-    width: 1170px
-    margin: 0 auto
     padding: 60px 0 50px
 .main-header
   float: left
@@ -140,8 +143,8 @@ main
   h2
     text-transform: uppercase
   ul
-    padding: 0
     margin: 0
+    padding: 0
   li
     display: inline-block
     position: relative
@@ -197,7 +200,70 @@ main
   .envira:hover
     &:after
       color: #688634
-      
+.main-content
+  background-color: #3d4a5d
+  .container
+    padding: 0 0 40px
+.bread-crumbs
+  ul
+    margin: 0 auto
+    padding: 30px 0
+    text-align: center
+  li
+    display: inline-block
+    list-style-type: none
+    font-size: 13px
+    &:after
+      content: '/'
+      cursor: default
+    &:last-child:after
+      content: ''
+  a
+    padding: 0 10px
+    line-height: 30px
+    color: white
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+.content
+  margin: 0
+  padding: 0
+  text-align: center
+  >li
+    display: inline-block
+    width: 270px
+    margin: 0 22px 25px 0
+    vertical-align: top
+    list-style-type: none
+    text-align: center
+    text-decoration: none
+    &:nth-child(4n)
+      margin-right: 0
+  a
+    display: block
+    line-height: 30px
+    text-decoration: none
+    color: white
+    &:hover
+      text-decoration: underline
+  .tags
+    margin: 0
+    padding: 0
+    line-height: 15px
+    font-size: 12px
+    li
+      display: inline-block
+      list-style-type: none
+      margin: 0
+    li:after
+      content: ' / '
+      cursor: default
+    li:last-child:after
+      content: ''
+    a
+      display: inline
+      color: $text-color
+
 
 
 
